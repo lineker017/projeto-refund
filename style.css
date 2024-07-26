@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: #e4ece9;
+  color: #1f2523;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin: 3rem 0 2rem;
+}
+
+main section {
+  display: flex;
+  flex: 1;
+  gap: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+form {
+  background-color: #f9fbfa;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  max-width: 462px;
+
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    font-size: 1.25rem;
+  }
+
+  & p {
+    font-size: .87rem;
+    color: #4d5c57;
+    margin: .75rem 0 2.5rem;
+  }
+}
+
