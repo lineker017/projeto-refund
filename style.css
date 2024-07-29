@@ -254,6 +254,59 @@ aside ul {
   }
 }
 
+@media (min-width: 1100px) {
+  form {
+    max-height: 428px;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    font-size: 14px;
+  }
+
+  main, aside {
+    min-width: 100%;
+  }
+
+  main section {
+    flex-direction: column;
+    width: 100%;
+
+    padding: 1.5rem;
+  }
+
+  main section form {
+    min-width: 100%;
+  }
+
+  main section aside ul {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+
+  .logo {
+    margin: 1.5rem 1.5rem 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .inputs-row {
+    flex-direction: column;
+  }
+
+  .inputs-row fieldset:last-child input {
+    max-width: auto;
+    min-width: 100%;
+  }
+
+  aside header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 
 
