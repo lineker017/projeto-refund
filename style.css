@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 :root {
@@ -15,7 +15,7 @@ body {
 
   background-color: #e4ece9;
   color: #1f2523;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,9 +46,9 @@ form {
   }
 
   & p {
-    font-size: .87rem;
+    font-size: 0.87rem;
     color: #4d5c57;
-    margin: .75rem 0 2.5rem;
+    margin: 0.75rem 0 2.5rem;
   }
 }
 
@@ -58,9 +58,9 @@ fieldset {
 
   & legend {
     text-transform: uppercase;
-    font-size: .62rem;
+    font-size: 0.62rem;
     color: #4d5c57;
-    margin-bottom: .25rem;
+    margin-bottom: .5rem;
   }
 }
 
@@ -71,23 +71,23 @@ fieldset:focus-within legend {
 
 input,
 select {
-  flex:1;
+  flex: 1;
   height: 3rem;
   border-radius: .5rem;
   border: 1px solid #cdd5d2;
   padding: 0 1rem;
-  font-size: .87rem;
-  color:#1f2523;
-  outline: none;
+  font-size: 0.87rem;
+  color: #1f2523;
   background-color: transparent;
+  outline: none;
 }
 
 select {
   appearance: none;
-  background: url(img/chevron-down.svg) no-repeat;
-  background-position: right .7rem top 50%;
+  background-image: url(img/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
   background-size: 1.25rem auto;
-  cursor: pointer;
 }
 
 input::placeholder,
@@ -100,7 +100,7 @@ select:focus {
   border: 1.5px solid #1f8459;
 }
 
-.input-row {
+.inputs-row {
   display: flex;
   flex: 1;
 
@@ -108,37 +108,30 @@ select:focus {
   margin-top: 1rem;
 
   & fieldset:first-child {
-    flex: 1;
+    flex: 1
   }
-  
+
   & fieldset:last-child input {
     max-width: 154px;
   }
 }
 
-
 form button {
   height: 3rem;
-  border-radius: 8px;
-  background-color: #1f8459;
-  padding: 1rem 1.25rem;
+  border-radius: .5rem;
   border: none;
-  margin-top: 2rem;
-
+  font-size: 0.87rem;
+  color: #fff;
+  background-color: #1f8459;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  color: white;
+  padding: 1rem 1.25rem;
+  margin-top: 2rem;
   cursor: pointer;
+
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #2CB178;
-  }
-
-  &:disabled {
-    background-color: #1F8459;
+    background-color: #2cb178;
   }
 }
 
@@ -151,11 +144,11 @@ aside {
   min-width: 600px;
 }
 
-header {
+aside header {
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-between;
 
-  border-bottom:1px #e4ece9 solid ;
+  border-bottom: 1px solid #e4ece9;
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
 
@@ -163,20 +156,21 @@ header {
     color: #4d5c57;
     font-weight: 400;
     font-size: 1rem;
+
+    & span {
+      color: #4d5c57;
+      font-weight: 400;
+      font-size: .675rem;
+      text-transform: uppercase;
+    }
+
+    & i {
+      color: #cdd5d2;
+      margin: 0 0.5rem;
+      font-style: normal;
+    }
   }
 
-  & span {
-    color: #4d5c57;
-    font-weight: 400;
-    font-size: .675rem;
-    text-transform: uppercase;
-  }
-
-  & i {
-    margin: 0 0.5rem;
-    font-size: .87rem;
-    font-style: normal;
-  }
   & h2 {
     font-size: 1rem;
     color: #1f2523;
@@ -185,8 +179,8 @@ header {
   & small {
     color: #4d5c57;
     font-weight: 400;
-    font-size: .75rem;
-    margin-right: .25rem;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
   }
 }
 
@@ -194,10 +188,11 @@ aside ul {
   list-style: none;
   display: flex;
   flex-direction: column;
+  overflow: auto;
   gap: 1rem;
 
   max-height: 310px;
-  min-height: 310px
+  min-height: 310px;
 }
 
 .expense {
@@ -209,7 +204,7 @@ aside ul {
     width: 2rem;
     height: 2rem;
 
-    margin-right: .75rem;
+    margin-right: 0.75rem;
   }
 
   & > div {
@@ -217,28 +212,28 @@ aside ul {
     flex-direction: column;
     flex: 1;
   }
+}
 
-  .expense-info strong {
-    font-size: .87rem;
-    color: #1f2523;
-  }
+.expense-info strong {
+  font-size: .87rem;
+  color: #1f2523;
+}
 
-  .expense-info span {
-    font-size: .75rem;
-    color: #1f2523;
-  }
+.expense-info span {
+  font-size: .75rem;
+  color: #4d5c57;
+}
 
-  .expense-amount {
-    font-size: .87rem;
-    color: #1f2523;
-    font-weight: 600;
-  }
+.expense-amount {
+  font-size: .87rem;
+  color: #1f2523;
+  font-weight: 600;
 
   & small {
     color: #4d5c57;
     font-weight: 400;
-    font-size: .75rem;
-    margin-right: .25rem;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
   }
 }
 
@@ -250,7 +245,7 @@ aside ul {
   transition: opacity 0.2s;
 
   &:hover {
-    opacity:0.7;
+    opacity: 0.7;
   }
 }
 
@@ -283,7 +278,6 @@ aside ul {
   main section aside ul {
     width: 100%;
     height: auto;
-    overflow: auto;
   }
 
   .logo {
@@ -306,7 +300,3 @@ aside ul {
     align-items: center;
   }
 }
-
-
-
-

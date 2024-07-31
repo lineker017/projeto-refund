@@ -2,28 +2,29 @@
 <html lang="en">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 
   <title>Refund</title>
 </head>
+
 <body>
   <main>
-    <img src="./img/logo.svg" alt="bg" class="logo">
+    <img src="./img/logo.svg" alt="Refund logo" class="logo">
 
     <section>
       <form>
         <h1>Solicitação de reembolso</h1>
-
         <p>
-          Informe os dados da despesa para solicitar reembolso. 
-          A despesa será analisada e reembolsada em até 30 dia.
+          Informe os dados da despesa para solicitar reembolso. A despesa será
+          analisada e reembolsada em até 30 dias.
         </p>
 
         <fieldset>
@@ -31,11 +32,11 @@
           <input type="text" id="expense" name="expense" required>
         </fieldset>
 
-        <div class="input-row">
+        <div class="inputs-row">
           <fieldset>
             <legend>Categoria</legend>
             <select name="category" id="category" required>
-              <option value="" hidden selected disabled>Selecione</option>
+              <option value="" disabled selected hidden>Selecione</option>
               <option value="food">Alimentação</option>
               <option value="accommodation">Hospedagem</option>
               <option value="services">Serviços</option>
@@ -47,33 +48,32 @@
           <fieldset>
             <legend>Valor da despesa</legend>
             <input 
-            type="text" 
-            name="amount" 
-            id="amount" 
-            placeholder="R$ 0,00" 
-            required
-          > 
+              type="text" 
+              name="amout" 
+              id="amount" 
+              placeholder="R$ 0,00" 
+              required
+            >
           </fieldset>
         </div>
 
-        <button type="submit">Adicionar despesas</button>
+        <button type="submit">Adicionar despesa</button>
       </form>
 
       <aside>
         <header>
           <p>
-            Minhas solicitações <i>&bullet;</i> 
+            Minhas solicitações <i>&bullet;</i>
             <span>0 despesa</span>
           </p>
-
           <h2>
             <small>R$</small>0,00
           </h2>
         </header>
 
         <ul>
-          <li class="expense">
-            <img src="./img/food.svg" alt="icon despesa">
+          <!-- <li class="expense">
+            <img src="./img/food.svg" alt="Icone de tipo da despesa">
 
             <div class="expense-info">
               <strong>Almoço</strong>
@@ -84,27 +84,14 @@
               <small>R$</small>1.420,57
             </span>
 
-            <img src="./img/remove.svg" alt="">
-          </li>
-
-          <li class="expense">
-            <img src="./img/transport.svg" alt="icon combustivel">
-
-            <div class="expense-info">
-              <strong>Gasolina</strong>
-              <span>Combustivel</span>
-            </div>
-
-            <span class="expense-amount">
-              <small>R$</small>5.220,57
-            </span>
-
-            <img src="./img/remove.svg" alt="">
-          </li>
+            <img src="./img/remove.svg" alt="Icone remove" class="remove-icon">
+          </li> -->
         </ul>
       </aside>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
